@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
 import { ComicPanel } from '@/components/ComicPanel'
 import { SpeechBubble } from '@/components/SpeechBubble'
 import { CaptionBox } from '@/components/CaptionBox'

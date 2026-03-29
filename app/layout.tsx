@@ -1,16 +1,14 @@
 import type { Metadata } from 'next'
 import { Bangers, Comic_Neue } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { Navbar } from '@/components/Navbar'
-import { Footer } from '@/components/Footer'
 import './globals.css'
 
 const bangers = Bangers({ weight: '400', subsets: ["latin"], variable: '--font-bangers' });
 const comicNeue = Comic_Neue({ weight: ['400', '700'], subsets: ["latin"], variable: '--font-comic' });
 
 export const metadata: Metadata = {
-  title: 'Umang Raj Jaiswal | Engineering Student & Builder',
-  description: 'Portfolio of Umang Raj Jaiswal — Computer Science student at BIT Mesra, public speaker, competitive programmer, and builder of digital experiences.',
+  title: 'Batman × Spider-Man Comic Portfolio',
+  description: 'A vintage 1970s comic book portfolio celebrating two iconic superheroes',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -39,11 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bangers.variable} ${comicNeue.variable}`}>
       <body className="font-comic antialiased bg-yellow-50">
-        <Navbar />
-        <div className="pt-16">
-          {children}
-        </div>
-        <Footer />
+        {children}
         <Analytics />
       </body>
     </html>
