@@ -70,7 +70,7 @@ export default function About() {
           >
             {/* Profile */}
             <motion.div variants={itemVariants}>
-              <ComicPanel variant="blue" className="text-white p-8">
+              <ComicPanel variant="blue" className="text-black p-8">
                 <h2 className="font-bangers text-4xl mb-4 text-comic-yellow">
                   UMANG RAJ JAISWAL
                 </h2>
@@ -91,7 +91,7 @@ export default function About() {
             {/* Skills & Achievements */}
             <motion.div variants={itemVariants}>
               <div className="space-y-6">
-                <ComicPanel variant="red" className="text-white p-6">
+                <ComicPanel variant="red" className="text-black p-6">
                   <h3 className="font-bangers text-2xl mb-4 text-comic-yellow">
                     SKILLS
                   </h3>
@@ -133,7 +133,7 @@ export default function About() {
       </section>
 
       {/* Core Values Section */}
-      <section className="relative py-20 bg-comic-red text-white border-b-8 border-black">
+      <section className="relative py-20 bg-comic-red text-black border-b-8 border-black">
         <HalftoneOverlay color="red" opacity={0.2} />
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">

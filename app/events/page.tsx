@@ -107,7 +107,7 @@ export default function Events() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-comic-red text-white border-b-8 border-black">
+      <section className="relative py-20 bg-comic-red text-black border-b-8 border-black">
         <HalftoneOverlay color="red" opacity={0.2} />
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -153,9 +153,7 @@ export default function Events() {
                 >
                   <ComicPanel
                     variant={colorVariant as 'default' | 'blue' | 'red' | 'yellow'}
-                    className={`h-full flex flex-col ${
-                      isYellow ? 'text-black' : 'text-white'
-                    }`}
+                    className={`h-full flex flex-col text-black`}
                   >
                     {/* Date & Category Badge */}
                     <div className="flex gap-4 items-start mb-4">
@@ -167,7 +165,7 @@ export default function Events() {
                         <div className="font-comic text-xs">{event.year}</div>
                       </div>
                       <div className={`text-sm font-comic font-bold px-2 py-1 border-2 border-current ${
-                        isYellow ? 'bg-comic-blue text-white' : 'bg-comic-black text-white'
+                        isYellow ? 'bg-comic-blue text-white' : 'bg-comic-black text-yellow-300'
                       }`}>
                         {event.category}
                       </div>
@@ -201,7 +199,7 @@ export default function Events() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="relative py-20 bg-comic-blue text-white border-t-8 border-black">
+      <section className="relative py-20 bg-comic-blue text-black border-t-8 border-black">
         <HalftoneOverlay color="blue" opacity={0.2} />
         
         <div className="max-w-3xl mx-auto px-4 text-center relative z-10">

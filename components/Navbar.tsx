@@ -59,7 +59,7 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-comic font-bold px-4 py-3 text-white border-b-2 border-black hover:bg-comic-red transition-colors"
+                    className="font-comic font-bold px-4 py-3 text-black border-b-2 border-black hover:bg-comic-red hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>

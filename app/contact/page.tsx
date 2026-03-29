@@ -94,7 +94,7 @@ export default function Contact() {
                 </h2>
               </div>
 
-              <ComicPanel variant="blue" className="text-white">
+              <ComicPanel variant="blue" className="text-black">
                 <h3 className="font-bangers text-xl text-comic-yellow mb-2">
                   GOTHAM HQ
                 </h3>
@@ -108,7 +108,7 @@ export default function Contact() {
                 </p>
               </ComicPanel>
 
-              <ComicPanel variant="red" className="text-white">
+              <ComicPanel variant="red" className="text-black">
                 <h3 className="font-bangers text-xl text-comic-yellow mb-2">
                   NEW YORK OFFICE
                 </h3>
@@ -137,7 +137,7 @@ export default function Contact() {
 
             {/* Contact Form */}
             <motion.div variants={itemVariants}>
-              <ComicPanel variant="blue" className="text-white">
+              <ComicPanel variant="blue" className="text-black">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="font-comic font-bold block mb-2">

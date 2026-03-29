@@ -16,8 +16,8 @@ export function ComicPanel({ children, variant = 'default', className = '' }: Co
   
   const textColors = {
     default: 'text-black',
-    blue: 'text-white',
-    red: 'text-white',
+    blue: 'text-black',
+    red: 'text-black',
     yellow: 'text-black',
   }
 

@@ -12,8 +12,8 @@ export function ComicButton({ children, variant = 'primary', ...props }: ComicBu
   const baseClass = 'font-bangers text-lg font-bold px-6 py-3 uppercase tracking-wider transition-transform active:scale-95'
   
   const variantClasses = {
-    primary: 'bg-comic-red text-white comic-shadow hover:translate-x-[2px] hover:translate-y-[2px]',
-    secondary: 'bg-comic-blue text-white comic-shadow hover:translate-x-[2px] hover:translate-y-[2px]',
+    primary: 'bg-comic-red text-black comic-shadow hover:translate-x-[2px] hover:translate-y-[2px]',
+    secondary: 'bg-comic-blue text-black comic-shadow hover:translate-x-[2px] hover:translate-y-[2px]',
     outline: 'bg-white text-black border-4 border-black comic-shadow hover:translate-x-[2px] hover:translate-y-[2px]',
   }
 
