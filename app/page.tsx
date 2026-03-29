@@ -2,8 +2,6 @@
 
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Navbar } from '@/components/Navbar'
-import { Footer } from '@/components/Footer'
 import { ComicPanel } from '@/components/ComicPanel'
 import { ComicButton } from '@/components/ComicButton'
 import { SoundBurst } from '@/components/SoundBurst'
@@ -118,7 +116,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-comic-cream">
-      <Navbar />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -270,8 +267,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

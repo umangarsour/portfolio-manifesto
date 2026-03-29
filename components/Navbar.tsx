@@ -16,7 +16,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-comic-yellow border-b-4 border-black comic-shadow">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-comic-yellow border-b-4 border-black comic-shadow">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo - Bat symbol */}
         <Link href="/" className="font-bangers text-2xl font-bold text-comic-red">
