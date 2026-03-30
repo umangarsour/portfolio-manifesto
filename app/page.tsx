@@ -136,23 +136,33 @@ export default function Home() {
         >
           <motion.h1
             variants={itemVariants}
-            className="font-bangers text-6xl md:text-8xl font-bold text-comic-red mb-6"
+            className="font-bangers text-5xl md:text-7xl font-bold text-comic-red mb-6"
             style={{
               textShadow: '3px 3px 0 #0066FF, 6px 6px 0 #1a1a1a',
             }}
           >
-            BAT × SPIDER
+            NOT YOUR USUAL MANIFESTO
           </motion.h1>
+
+          <motion.h2
+            variants={itemVariants}
+            className="font-bangers text-4xl md:text-5xl font-bold text-comic-blue mb-4"
+          >
+            THIS IS A STORY
+          </motion.h2>
 
           <motion.div
             variants={itemVariants}
             className="mb-8"
           >
-            <p className="font-comic text-2xl md:text-3xl text-comic-black mb-4 font-bold">
-              A LEGENDARY COLLABORATION
+            <p className="font-comic text-3xl md:text-4xl text-comic-black mb-4 font-bold">
+              Hi, I&apos;m Umang Raj Jaiswal
             </p>
-            <p className="font-comic text-lg text-comic-black mb-6">
-              Two iconic superheroes, one unforgettable portfolio experience
+            <p className="font-bangers text-2xl text-comic-red mb-6">
+              Creator. Competitor. Contributor.
+            </p>
+            <p className="font-comic text-lg text-comic-black mb-6 leading-relaxed">
+              Building experiences. Winning arguments. Making things happen.
             </p>
           </motion.div>
 
@@ -161,10 +171,10 @@ export default function Home() {
             className="flex flex-col md:flex-row gap-4 justify-center mb-12"
           >
             <ComicButton variant="primary">
-              Explore Projects
+              Explore My Vision
             </ComicButton>
             <ComicButton variant="secondary">
-              Learn About Us
+              Why Me
             </ComicButton>
           </motion.div>
 
@@ -172,17 +182,17 @@ export default function Home() {
             variants={itemVariants}
             className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12"
           >
-            <ComicPanel variant="blue" className="text-white">
-              <div className="text-3xl font-bangers">99</div>
-              <div className="font-comic text-sm">PROJECTS</div>
+            <ComicPanel variant="blue" className="text-black">
+              <div className="text-3xl font-bangers">2+</div>
+              <div className="font-comic text-sm">YEARS ACTIVE</div>
             </ComicPanel>
-            <ComicPanel variant="red" className="text-white">
-              <div className="text-3xl font-bangers">24/7</div>
-              <div className="font-comic text-sm">HEROES</div>
+            <ComicPanel variant="red" className="text-black">
+              <div className="text-3xl font-bangers">100%</div>
+              <div className="font-comic text-sm">COMMITMENT</div>
             </ComicPanel>
             <ComicPanel variant="yellow" className="text-black">
               <div className="text-3xl font-bangers">∞</div>
-              <div className="font-comic text-sm">POWER</div>
+              <div className="font-comic text-sm">GROWTH</div>
             </ComicPanel>
           </motion.div>
         </motion.div>
@@ -205,8 +215,8 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Features Section */}
-      <section className="relative py-20 bg-comic-blue text-white border-t-8 border-black">
+      {/* About Me Section */}
+      <section className="relative py-20 bg-comic-blue text-black border-t-8 border-black">
         <HalftoneOverlay color="blue" opacity={0.2} />
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -217,37 +227,32 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            SUPER FEATURES
+            ABOUT ME
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { title: 'ICONIC DESIGN', desc: 'Vintage 1970s comic aesthetics' },
-              { title: 'DYNAMIC ACTION', desc: 'Smooth animations throughout' },
-              { title: 'EPIC CONTENT', desc: 'Rich stories and experiences' },
-            ].map((feature, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: i * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <ComicPanel variant="yellow" className="text-black h-full">
-                  <h3 className="font-bangers text-2xl mb-4 text-comic-red">
-                    {feature.title}
-                  </h3>
-                  <p className="font-comic text-sm">
-                    {feature.desc}
-                  </p>
-                </ComicPanel>
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <ComicPanel variant="yellow" className="text-black">
+              <p className="font-comic text-base leading-relaxed mb-4">
+                I&apos;m a Computer Science sophomore who&apos;s been into quizzing and debating since school—competing, winning, and enjoying the thrill of a good argument. I&apos;m passionate about creating, not on paper but digitally—building websites that combine logic and aesthetics into something people actually enjoy using.
+              </p>
+              <p className="font-comic text-base leading-relaxed mb-4">
+                I&apos;m also a huge fan of movies and shows across languages (whether that makes me a cinephile is up for debate), and I love the adrenaline of sports—both watching and playing cricket, table tennis, snooker, and football. And yes, a bit unexpectedly, I dance too—exploring styles from freestyle to salsa to Bollywood—and even had a short acting stint as Mowgli in The Jungle Book.
+              </p>
+              <p className="font-comic text-base leading-relaxed font-bold">
+                At my core, I&apos;m curious, creative, and competitive—and I strongly believe that if you&apos;re doing something or competing for something and you&apos;re not passionate about winning, you&apos;re doing it wrong.
+              </p>
+            </ComicPanel>
+          </motion.div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final CTA Section */}
       <section className="relative py-16 bg-comic-red border-t-8 border-black">
         <HalftoneOverlay color="red" opacity={0.2} />
         
@@ -258,14 +263,16 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-bangers text-4xl text-white mb-6">
-              READY FOR ACTION?
+            <h2 className="font-bangers text-5xl text-black mb-6">
+              YOUR VOTE. YOUR STORY.
             </h2>
-            <p className="font-comic text-white mb-8 text-lg">
-              Dive into our world and discover amazing projects, stories, and experiences.
-            </p>
+            <div className="font-bangers text-2xl text-black mb-8 leading-relaxed">
+              <p className="mb-2">Vote for better.</p>
+              <p className="mb-2">Vote for impact.</p>
+              <p className="font-bold">Vote for Umang.</p>
+            </div>
             <ComicButton variant="outline">
-              START YOUR ADVENTURE
+              READ THE FULL MANIFESTO
             </ComicButton>
           </motion.div>
         </div>
