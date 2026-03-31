@@ -9,6 +9,7 @@ import { SpeechBubble } from '@/components/SpeechBubble'
 import { CaptionBox } from '@/components/CaptionBox'
 import { HalftoneOverlay } from '@/components/HalftoneOverlay'
 import { ComicButton } from '@/components/ComicButton'
+import Image from 'next/image'
 
 export default function Manifesto() {
   const manifestoPoints = [
@@ -195,7 +196,7 @@ the club`,
 
       {/* Hero Section */}
       <section className="relative py-20 bg-comic-red text-black border-b-8 border-black">
-        <HalftoneOverlay color="red" opacity={0.2} />
+        
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <motion.h1
@@ -288,10 +289,10 @@ I have and will give my all to this family.
       {/* Core Principles */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-            <div className='mx-auto w-4xl'>
+            <div className='mx-auto w-[95%] lg:w-4xl'>
          <SpeechBubble variant="speech" className="bg-comic-yellow border-4 border-black text-black p-8">
               <h1 className='text-5xl font-medium text-center font-bangers'>THE CLAUSES</h1>
-              <p className='font-semibold mt-4 font-fira text-center w-2xl mx-auto'>
+              <p className='font-semibold mt-4 font-fira text-center lg:w-2xl mx-auto'>
                 I refuse to sell you the illusion of instant
 change. No manifesto or individual can
 magically solve every problem overnight.

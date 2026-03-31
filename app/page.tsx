@@ -9,6 +9,8 @@ import { ComicButton } from '../components/ComicButton'
 import { SoundBurst } from '@/components/SoundBurst'
 import { CaptionBox } from '@/components/CaptionBox'
 import { HalftoneOverlay } from '@/components/HalftoneOverlay'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -122,6 +124,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute z-30 
+  w-[180px] h-[180px] top-40 left-25
+  sm:w-[120px] sm:h-[120px] sm:top-20 sm:left-6
+  lg:w-[280px] lg:h-[280px] lg:top-20 lg:left-30
+  ">
+  <Image
+    src="/profile.jpeg"
+    alt="profile"
+    fill
+    className="object-cover rounded-full border-4 border-black"
+  />
+</div>
+        <HalftoneOverlay color="red" opacity={0.2} />
         <canvas
           ref={canvasRef}
           className="absolute inset-0 z-0"
@@ -136,7 +151,7 @@ export default function Home() {
         >
           <motion.h1
             variants={itemVariants}
-            className="font-bangers text-6xl md:text-8xl font-bold text-comic-red mb-6"
+            className="font-bangers text-6xl md:text-8xl mt-4 font-bold text-comic-red mb-6"
             style={{
               textShadow: '3px 3px 0 #0066FF, 6px 6px 0 #1a1a1a',
             }}
@@ -148,7 +163,7 @@ export default function Home() {
             variants={itemVariants}
             className="mb-8"
           >
-            <p className="font-fira text-2xl md:text-3xl text-comic-black mb-4 font-black tracking-tight">
+            <p className="mt-60 lg:mt-0 font-fira text-2xl md:text-3xl text-comic-black mb-4 font-black tracking-tight">
               NOT YOUR TYPICAL MANIFESTO
             </p>
             <p className="font-comic text-lg text-comic-black mb-6">
@@ -160,7 +175,7 @@ export default function Home() {
             variants={itemVariants}
             className="flex flex-col md:flex-row gap-4 justify-center mb-12"
           >
-            <div className='text-2xl font-medium font-fira tracking-tight'>
+            <div className='text-xl lg:text-2xl font-medium font-fira tracking-tight'>
 
             Hi, I’m Umang Raj Jaiswal,
 a Computer Science sophomore, a quizzer-debater by instinct, and someone who genuinely enjoys creating things that people remember.
@@ -184,7 +199,7 @@ And I firmly believe:
 
         {/* Animated sound bursts */}
         <motion.div
-          className="absolute bottom-20 left-10 z-30"
+          className="hidden lg:block absolute bottom-20 left-10 z-30"
           animate={{ rotate: [0, -5, 5, 0] }}
           transition={{ duration: 3, repeat: Infinity }}
         >
@@ -192,7 +207,7 @@ And I firmly believe:
         </motion.div>
 
         <motion.div
-          className="absolute top-32 right-10 z-30"
+          className="hidden lg:block absolute top-32 right-10 z-30"
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ duration: 2.5, repeat: Infinity }}
         >
@@ -332,9 +347,11 @@ it’s memory, mood, and motivation all in one.`},
             <p className="font-comic text-black mb-8 text-lg">
               Dive into this chaotic yet mesmerizing journey with me and trust me you won't regret it.
             </p>
+            <Link href={"/manifesto"}>
             <ComicButton variant="outline">
               LET'S BEGIN THEN!!
             </ComicButton>
+            </Link>
           </motion.div>
         </div>
       </section>

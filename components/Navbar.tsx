@@ -3,13 +3,13 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Menu } from 'lucide-react'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About Me', href: '/about' },
     { label: 'Events', href: '/events' },
     { label: 'Manifesto', href: '/manifesto' },
   ]
@@ -40,7 +40,7 @@ export function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden font-bangers text-2xl text-black"
         >
-          ☆
+         <Menu/> 
         </button>
 
         {/* Mobile Menu */}
@@ -58,7 +58,7 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-comic font-bold px-4 py-3 text-white border-b-2 border-black hover:bg-comic-red transition-colors"
+                    className="font-fira bg-black/90 font-bold px-4 py-3 text-[#FFF000] border-b-2 border-[#FFF000] hover:bg-comic-red transition-colors"
                   >
                     {item.label}
                   </Link>

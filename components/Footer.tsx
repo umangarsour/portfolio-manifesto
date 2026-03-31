@@ -1,5 +1,6 @@
 import React from 'react'
 import { CitySkies } from './CitySkies'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -19,29 +20,30 @@ export function Footer() {
             </p>
           </div>
           
-          <div>
-            <h3 className="font-bangers text-xl text-comic-yellow mb-4">
-              QUICK LINKS
-            </h3>
-            <ul className="font-comic text-sm space-y-2">
-              <li><a href="/about" className="hover:text-comic-yellow transition">About Me</a></li>
-              <li><a href="/events" className="hover:text-comic-yellow transition">Events</a></li>
-              <li><a href="/contact" className="hover:text-comic-yellow transition">Contact</a></li>
-            </ul>
-          </div>
+          
           
           <div>
             <h3 className="font-bangers text-xl text-comic-yellow mb-4">
               FOLLOW
             </h3>
             <div className="font-comic text-sm space-y-2">
-              <p>Twitter • Instagram • GitHub</p>
+              <ul >
+                <Link href={"https://www.instagram.com/umangaaasourrr?igsh=ejRkNTZ6azV2NW94"}>
+                <li className='ml-2 mb-4 cursor-pointer'>Instagram</li>
+                </Link>
+                <Link href={"https://github.com/umangarsour"}>
+                <li className='ml-2 mb-4 cursor-pointer'>Github</li>
+                </Link>
+                <Link href={"https://www.linkedin.com/in/umang-raj-jaiswal"}>
+                <li className='ml-2 mb-4 cursor-pointer'>LinkedIn</li>
+                </Link>
+              </ul>
             </div>
           </div>
         </div>
         
         <div className="border-t-2 border-comic-red pt-8 text-center font-comic text-sm">
-          <p>&copy; 2024 Umang Raj Jaiswal. All rights reserved.</p>
+          <p>&copy; 2026 Umang Raj Jaiswal. All rights reserved.</p>
           <p className="text-comic-yellow mt-2 font-bangers">BUILDING THE FUTURE! 💻</p>
         </div>
       </div>

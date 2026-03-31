@@ -124,7 +124,7 @@ export default function Events() {
             EVENTS & ACHIEVEMENTS
           </motion.h1>
           <motion.p
-            className="font-comic text-xl max-w-3xl"
+            className="font-fira font-semibold text-xl max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -165,7 +165,7 @@ export default function Events() {
                       {event.title}
                     </h3>
                     
-                    <p className="font-comic text-sm whitespace-pre-line leading-relaxed">
+                    <p className="font-fira text-sm whitespace-pre-line leading-relaxed">
                       {event.description}
                     </p>
                   </ComicPanel>
