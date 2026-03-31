@@ -10,26 +10,11 @@ const fsC = Fira_Sans_Condensed({
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-fira',
 });
-export const metadata: Metadata = {
-  title: 'Batman × Spider-Man Comic Portfolio',
-  description: 'A vintage 1970s comic book portfolio celebrating two iconic superheroes',
-  generator: 'v0.app',
+export const metadata = {
+  title: 'Umang Raj Jaiswal | Manifesto',
+  description: 'Not your usual manifesto.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.ico',
   },
 }
 
