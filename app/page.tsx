@@ -127,7 +127,7 @@ export default function Home() {
         <div className="absolute z-30 
   w-[180px] h-[180px] top-40 left-25
   sm:w-[120px] sm:h-[120px] sm:top-20 sm:left-6
-  lg:w-[280px] lg:h-[280px] lg:top-20 lg:left-30
+  lg:w-[280px] lg:h-[280px] lg:top-20 lg:left-20
   ">
   <Image
     src="/profile.jpeg"
